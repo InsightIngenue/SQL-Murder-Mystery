@@ -15,7 +15,8 @@ A crime has taken place and the detective needs your help. The detective gave yo
 
 ## Solution
 
-**Finding the crime in crime_scene_report**
+### **Finding the crime in crime_scene_report**
+
 To get started, we know that the "murder" took place on "Jan 15 2018" in "SQL City". Use these conditions to filter the crime report.
 SELECT \*
 FROM Crime_scene_report
@@ -54,8 +55,8 @@ AND name LIKE "Annabel%"
 From the two transcripts we know that the killer had "Gold" membership with id strating from 48Z. Using these conditions and joining get_fit_now_member table with get_fit_now_check_in table we can narrow our search to few people.
 
 SELECT
-membership_id, check_in_date, person_id, name, membership_status  
- FROM get_fit_now_member
+membership_id, check_in_date, person_id, name, membership_status
+FROM get_fit_now_member
 INNER JOIN get_fit_now_check_in
 ON id = membership_id
 WHERE membership_status = "gold"
@@ -90,8 +91,8 @@ Clues in his statement: Gender = Female; Hair colour =Red, Height = Between 65 a
 SELECT
 DISTINCT person.name, person.id, person.license_id
 FROM drivers_license
-INNER JOIN person  
- on Drivers_license.id = person.license_id
+INNER JOIN person
+on Drivers_license.id = person.license_id
 INNER JOIN facebook_event_checkin
 ON person.id = facebook_event_checkin.person_id
 WHERE gender = 'female'
