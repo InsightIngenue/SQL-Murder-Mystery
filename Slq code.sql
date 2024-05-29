@@ -1,4 +1,4 @@
-**Finding the crime in crime_scene_report**
+* Finding the crime in crime_scene_report
 
 SELECT 
     *
@@ -8,7 +8,7 @@ SELECT
 ;
 
 
-**Finding the First witness and his/her interview transcript**
+* Finding the First witness and his/her interview transcript
 
 SELECT 
     name, transcript 
@@ -21,7 +21,7 @@ SELECT
 ;
 
 
-**Finding the Second witness and his/her interview transcript**
+* Finding the Second witness and his/her interview transcript
 
 SELECT 
     name, transcript 
@@ -33,7 +33,7 @@ SELECT
 ;
 
 
-**Finding the person with Get Fit Now Gold membership**
+* Finding the person with Get Fit Now Gold membership
 
 SELECT 
     membership_id, check_in_date, person_id, name, membership_status   
@@ -45,7 +45,7 @@ SELECT
 ;
 
 
-**Finding the KILLER**
+* Finding the KILLER 
 
 SELECT 
     person.id, name, plate_number 
@@ -57,7 +57,7 @@ SELECT
 ;
 
 
-**Finding the MASTERMIND**
+* Finding the MASTERMIND
 
 SELECT 
     * 
@@ -71,7 +71,7 @@ SELECT
      DISTINCT person.name, person.id, person.license_id
         FROM drivers_license 
             INNER JOIN person  
-            on Drivers_license.id = person.license_id 
+            ON Drivers_license.id = person.license_id 
                 INNER JOIN facebook_event_checkin 
                 ON person.id =  facebook_event_checkin.person_id
                     WHERE   gender = 'female' 

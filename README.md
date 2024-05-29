@@ -33,6 +33,8 @@ To get started, we know that the "murder" took place on "Jan 15 2018" in "SQL Ci
       ;
 ```
 
+<img src = "https://github.com/InsightIngenue/SQL-Murder-Mystery/assets/169789264/c05b4f76-6c4e-42eb-80a7-770e95afe931" width "200" height "100">
+
 This gives us clues of 2 witnesses.
 
 ### **2. Finding the First witness and his/her interview transcript**
@@ -49,6 +51,8 @@ First witness lives on the last house of Northwestern Dr. Using these conditions
             LIMIT 1
       ;
 ```
+
+![image](https://github.com/InsightIngenue/SQL-Murder-Mystery/assets/169789264/d8edf6eb-1ec2-4e55-900e-dc1774d151ae)
 
 ### **3. Finding the Second witness and his/her interview transcript**
 
