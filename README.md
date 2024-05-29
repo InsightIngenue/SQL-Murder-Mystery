@@ -2,7 +2,9 @@
 
 This repository showcases the sql prompts I used to solve the infamous "SQL Murder Mystery" exercise.
 
-<img src = "Images/Icon.png" width="500">
+<div align='center'>
+  <img src = "Images/Icon.png" width="500">
+</div>
 
 ## About the excercise
 
@@ -35,7 +37,7 @@ To get started, we know that the "murder" took place on "Jan 15 2018" in "SQL Ci
       ;
 ```
 
-<img src = "Images/Transcript.png" width="500">
+  <img src = "Images/Transcript.png" width="500">
 
 This gives us clues of 2 witnesses.
 
@@ -54,7 +56,7 @@ First witness lives on the last house of Northwestern Dr. Using these conditions
       ;
 ```
 
-<img src = "Images/Witness1.png" width="500">
+  <img src = "Images/Witness1.png" width="500">
 
 ### **3. Finding the Second witness and his/her interview transcript**
 
@@ -70,7 +72,7 @@ We have first name and address of second witness. Using these conditions and joi
       ;
 ```
 
-<img src = "Images/Witness2.png" width="500">
+  <img src = "Images/Witness2.png" width="500">
 
 ### **4. Finding the person with Get Fit Now Gold membership**
 
@@ -86,7 +88,7 @@ From the two transcripts we know that the killer had "Gold" membership with id s
       ;
 ```
 
-<img src = "Images/Suspects.png" width="500">
+  <img src = "Images/Suspects.png" width="500">
 
 ### **5. Finding the KILLER**
 
@@ -101,6 +103,10 @@ We now have 2 suspects and part of the Killer's plate number. Using these condit
           AND plate_number LIKE "%H42W%"
       ;
 ```
+
+**Spolier Alert !!**
+
+<img src = "Images/Killer1.png" width="200">
 
 <img src = "Images/Killer.png" width="500">
 
@@ -117,7 +123,7 @@ To find the mastermind, first let's look at the transcript of the Killer.
       ;
 ```
 
-<img src = "Images/Transcript2.png" width="500">
+  <img src = "Images/Transcript2.png" width="500">
 
 Clues in his statement:
 Gender = Female; Hair colour =Red, Height = Between 65 and 67, Car make = Tesla' and Car model = Model S, Event attended = SQL Symphoy Concert
@@ -138,6 +144,10 @@ Use these clues and Joining drivers_license, person and facebook_event_checkin t
                       AND height Between 65 AND 67
         ;
 ```
+
+**Spolier Alert !!**
+
+<img src = "Images/Mastermind1.png" width="300">
 
 <img src = "Images/Mastermind.png" width="500">
 
