@@ -2,6 +2,8 @@
 
 This repository showcases the sql prompts I used to solve the infamous "SQL Murder Mystery" exercise.
 
+<img src = "Images/Icon.png" width="500">
+
 ## About the excercise
 
 The SQL Murder Mystery exercise is intended primarily as a way to practice SQL skills and was created by Joon Park and Cathy He while they were Knight Lab fellows.
@@ -33,7 +35,7 @@ To get started, we know that the "murder" took place on "Jan 15 2018" in "SQL Ci
       ;
 ```
 
-<img src = "https://github.com/InsightIngenue/SQL-Murder-Mystery/assets/169789264/c05b4f76-6c4e-42eb-80a7-770e95afe931" width "200" height "100">
+<img src = "Images/Transcript.png" width="500">
 
 This gives us clues of 2 witnesses.
 
@@ -52,7 +54,7 @@ First witness lives on the last house of Northwestern Dr. Using these conditions
       ;
 ```
 
-![image](https://github.com/InsightIngenue/SQL-Murder-Mystery/assets/169789264/d8edf6eb-1ec2-4e55-900e-dc1774d151ae)
+<img src = "Images/Witness1.png" width="500">
 
 ### **3. Finding the Second witness and his/her interview transcript**
 
@@ -68,6 +70,8 @@ We have first name and address of second witness. Using these conditions and joi
       ;
 ```
 
+<img src = "Images/Witness2.png" width="500">
+
 ### **4. Finding the person with Get Fit Now Gold membership**
 
 From the two transcripts we know that the killer had "Gold" membership with id strating from 48Z. Using these conditions and joining get_fit_now_member table with get_fit_now_check_in table we can narrow our search to few people.
@@ -81,6 +85,8 @@ From the two transcripts we know that the killer had "Gold" membership with id s
           AND membership_id LIKE "48Z%"
       ;
 ```
+
+<img src = "Images/Suspects.png" width="500">
 
 ### **5. Finding the KILLER**
 
@@ -96,6 +102,8 @@ We now have 2 suspects and part of the Killer's plate number. Using these condit
       ;
 ```
 
+<img src = "Images/Killer.png" width="500">
+
 ### **6. Finding the MASTERMIND**
 
 Looks like there is someone else behind the crime.
@@ -108,6 +116,8 @@ To find the mastermind, first let's look at the transcript of the Killer.
         WHERE person_id = 67318
       ;
 ```
+
+<img src = "Images/Transcript2.png" width="500">
 
 Clues in his statement:
 Gender = Female; Hair colour =Red, Height = Between 65 and 67, Car make = Tesla' and Car model = Model S, Event attended = SQL Symphoy Concert
@@ -128,5 +138,7 @@ Use these clues and Joining drivers_license, person and facebook_event_checkin t
                       AND height Between 65 AND 67
         ;
 ```
+
+<img src = "Images/Mastermind.png" width="500">
 
 Our SQL Skill has solved another crime!!!!
